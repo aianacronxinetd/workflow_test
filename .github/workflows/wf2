@@ -1,0 +1,11 @@
+name: wf2
+on: workflow_dispatch
+jobs:
+  Shell script:
+      - name: Greeting
+        on: ubuntu-latest
+        steps:
+          - name checkout
+            actions: actions/checkout@v2
+            run: echo "Hello World"
+            shell: bash
