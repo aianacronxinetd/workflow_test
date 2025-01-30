@@ -2,7 +2,9 @@ name: wf3
 on: workflow_dispatch
 jobs:
   greeting:
-    - name: greeting
+      name: greeting
       runs-on: ubuntu-latest
       steps:
-        - name
+        - name: run basch command
+          run: echo "Hello World"
+          shell: bash
