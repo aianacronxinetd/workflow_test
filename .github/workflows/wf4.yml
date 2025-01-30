@@ -1,0 +1,11 @@
+name: wf4
+on: workflow_dispatch
+jobs:
+  greeting:
+    name: greeting
+    runs-on: ubuntu-latest
+    steps:
+      - name: shell command
+        run: echo "Hello World"
+        shell: bash
+    
